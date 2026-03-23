@@ -2,7 +2,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 import path from 'node:path'
 
 export default {
-  entry: './bootstrap/browser.jsx',
+  entry: './src/app.jsx',
 
   mode: 'production',
   module: {
@@ -34,7 +34,7 @@ export default {
   plugins: [
     new HtmlWebpackPlugin({
       scriptLoading: 'module',
-      template: 'bootstrap/index.html',
+      template: 'src/index.html',
     }),
   ],
 }

@@ -9,11 +9,10 @@ const app = express()
 const webRoot = path.join(process.cwd(), 'www')
 
 app.use('/', express.static(webRoot))
-app.use('/admin', express.static(webRoot))
 
 app.listen(port, address, error => {
   if (error) {
-    console.error('prodServer app listen error:', error)
+    console.error('prodServer.mjs: app.listen error:', error)
     process.exit(1)
   }
 
